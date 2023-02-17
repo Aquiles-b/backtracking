@@ -1,11 +1,11 @@
 CC=gcc
 CFLAGS=-g -Wall -o
 
-presentes: natal.c
-	$(CC) natal.c $(CFLAGS) presentes
+trab: main.c
+	$(CC) main.c $(CFLAGS) trab
 
-run: presentes
-	./presentes
+run: trab
+	./trab
 
 clean: 
-	rm presentes
+	rm trab

@@ -176,11 +176,11 @@ void imprime_saco_detalhado (saco_t *saco){
 int main(){
     presentes_t *presentes = cria_presentes_t();
     le_presentes(presentes);
-    imprime_presentes(presentes);
+    /* imprime_presentes(presentes); */
 
     saco_t *saco = cria_melhor_saco(presentes);
-    /* imprime_saco(saco); */
-    imprime_saco_detalhado(saco);
+    imprime_saco(saco);
+    /* imprime_saco_detalhado(saco); */
 
     presentes = grinch(presentes);
     saco = destroi_saco(saco);
